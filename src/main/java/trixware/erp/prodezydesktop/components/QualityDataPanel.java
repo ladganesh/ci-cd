@@ -1,0 +1,467 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package trixware.erp.prodezydesktop.components;
+
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+
+/**
+ *
+ * @author dell
+ */
+public class QualityDataPanel extends javax.swing.JPanel 
+{
+    private int id;
+    private String param_name;
+    private float value1,value2,value3,value4,value5,value6,value7,value8,value9,value10;
+    private Float std;
+    private Float upper,lower;
+
+    public Float getUpper() 
+    {
+        return Float.parseFloat(jLabel_upper.getText());
+    }
+
+    public void setUpper(Float upper) 
+    {
+        this.upper = upper;
+        jLabel_upper.setText(""+upper);
+    }
+
+    public Float getLower() {
+        return Float.parseFloat(jLabel_lower.getText());
+    }
+
+    public void setLower(Float lower) {
+        this.lower = lower;
+        jLabel_lower.setText(""+lower);
+    }
+
+    public Float getStd() {
+        return std;
+    }
+
+    public void setStd(Float std) {
+        this.std = std;
+        jLabel_std.setText(std+"");
+    }
+
+    public float getValue1() 
+    {
+        return Float.parseFloat(jTextFieldValue1.getText());
+    }
+
+    public void setValue1(float value1) 
+    {
+        this.value1 = value1;
+        jTextFieldValue1.setText(""+value1);
+    }
+    
+    public float getValue2() {
+        return Float.parseFloat(jTextFieldValue2.getText());
+    }
+
+    public void setValue2(float value2) 
+    {
+        this.value2 = value2;
+        jTextFieldValue2.setText(""+value2);
+    }
+    
+    public float getValue3() {
+        return Float.parseFloat(jTextFieldValue3.getText());
+    }
+
+    public void setValue3(float value3) 
+    {
+        this.value3 = value3;
+        jTextFieldValue3.setText(""+value3);
+    }
+    
+    public float getValue4() {
+        return Float.parseFloat(jTextFieldValue4.getText());
+    }
+
+    public void setValue4(float value4) 
+    {
+        this.value4 = value4;
+        jTextFieldValue4.setText(""+value4);
+    }
+
+    public float getValue5() {
+        return Float.parseFloat(jTextFieldValue5.getText());
+    }
+
+    public void setValue5(float value5) 
+    {
+        this.value5 = value5;
+        jTextFieldValue5.setText(""+value5);
+    }
+    
+    public float getValue6() {
+        return Float.parseFloat(jTextFieldValue6.getText());
+    }
+
+    public void setValue6(float value6) 
+    {
+        this.value6 = value6;
+        jTextFieldValue6.setText(""+value6);
+    }
+    
+    public float getValue7() {
+        return Float.parseFloat(jTextFieldValue7.getText());
+    }
+
+    public void setValue7(float value7) 
+    {
+        this.value7 = value7;
+        jTextFieldValue7.setText(""+value7);
+    }
+    
+    public float getValue8() {
+        return Float.parseFloat(jTextFieldValue8.getText());
+    }
+
+    public void setValue8(float value8) 
+    {
+        this.value8 = value8;
+        jTextFieldValue8.setText(""+value8);
+    }
+    
+    public float getValue9() {
+        return Float.parseFloat(jTextFieldValue9.getText());
+    }
+
+    public void setValue9(float value9) 
+    {
+        this.value9 = value9;
+        jTextFieldValue9.setText(""+value9);
+    }
+    
+    public float getValue10() {
+        return Float.parseFloat(jTextFieldValue10.getText());
+    }
+
+    public void setValue10(float value10) 
+    {
+        this.value10 = value10;
+        jTextFieldValue10.setText(""+value10);
+    }
+    public int getId() 
+    {
+        return Integer.parseInt(JlabelId.getText());
+    }
+    
+    
+    public void setId(int id) 
+    {
+        this.id = id;
+        JlabelId.setText(""+id);
+        
+    }
+
+    public String getParam_name() 
+    {
+        return jLabelName.getText();
+    }
+
+    public void setParam_name(String param_name) 
+    {
+        this.param_name = param_name;
+        jLabelName.setText(param_name);
+    }
+
+    /**
+     * Creates new form QualityValuePanel
+     */
+    public QualityDataPanel() {
+        initComponents();
+        jTextFieldValue1.addFocusListener(f2);
+        jTextFieldValue2.addFocusListener(f2);
+        jTextFieldValue3.addFocusListener(f2);
+        jTextFieldValue4.addFocusListener(f2);
+        jTextFieldValue5.addFocusListener(f2);
+        jTextFieldValue6.addFocusListener(f2);
+        jTextFieldValue7.addFocusListener(f2);
+        jTextFieldValue8.addFocusListener(f2);
+        jTextFieldValue9.addFocusListener(f2);
+        jTextFieldValue10.addFocusListener(f2);
+        
+        
+        jLabel_lower.setVisible(false);
+        jLabel_upper.setVisible(false);
+        
+        
+        
+        
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        JlabelId = new javax.swing.JLabel();
+        jLabelName = new javax.swing.JLabel();
+        jTextFieldValue1 = new javax.swing.JTextField();
+        jTextFieldValue2 = new javax.swing.JTextField();
+        jTextFieldValue3 = new javax.swing.JTextField();
+        jTextFieldValue4 = new javax.swing.JTextField();
+        jTextFieldValue5 = new javax.swing.JTextField();
+        jTextFieldValue6 = new javax.swing.JTextField();
+        jTextFieldValue7 = new javax.swing.JTextField();
+        jTextFieldValue8 = new javax.swing.JTextField();
+        jTextFieldValue9 = new javax.swing.JTextField();
+        jTextFieldValue10 = new javax.swing.JTextField();
+        jLabel_std = new javax.swing.JLabel();
+        jLabel_lower = new javax.swing.JLabel();
+        jLabel_upper = new javax.swing.JLabel();
+
+        setPreferredSize(new java.awt.Dimension(260, 40));
+
+        JlabelId.setText("L0");
+        JlabelId.setPreferredSize(new java.awt.Dimension(11, 0));
+
+        jLabelName.setText("jLabel2");
+
+        jTextFieldValue1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldValue1ActionPerformed(evt);
+            }
+        });
+
+        jTextFieldValue2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldValue2ActionPerformed(evt);
+            }
+        });
+
+        jTextFieldValue3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldValue3ActionPerformed(evt);
+            }
+        });
+
+        jTextFieldValue4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldValue4ActionPerformed(evt);
+            }
+        });
+
+        jTextFieldValue5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldValue5ActionPerformed(evt);
+            }
+        });
+
+        jTextFieldValue6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldValue6ActionPerformed(evt);
+            }
+        });
+
+        jTextFieldValue7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldValue7ActionPerformed(evt);
+            }
+        });
+
+        jTextFieldValue8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldValue8ActionPerformed(evt);
+            }
+        });
+
+        jTextFieldValue9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldValue9ActionPerformed(evt);
+            }
+        });
+
+        jTextFieldValue10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldValue10ActionPerformed(evt);
+            }
+        });
+
+        jLabel_std.setText("0");
+
+        jLabel_lower.setText("Lower");
+
+        jLabel_upper.setText("uper");
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(JlabelId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabelName, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel_std, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)))
+                .addGap(18, 18, 18)
+                .addComponent(jTextFieldValue1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jTextFieldValue2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jTextFieldValue3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jTextFieldValue4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jTextFieldValue5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jTextFieldValue6, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jTextFieldValue7, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jTextFieldValue8, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jTextFieldValue9, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jTextFieldValue10, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel_lower)
+                .addGap(15, 15, 15)
+                .addComponent(jLabel_upper)
+                .addContainerGap())
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(JlabelId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelName)
+                    .addComponent(jTextFieldValue1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldValue2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldValue3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldValue4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldValue5, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldValue6, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldValue7, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldValue8, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldValue9, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldValue10, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_std)
+                    .addComponent(jLabel_lower)
+                    .addComponent(jLabel_upper))
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextFieldValue1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldValue1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldValue1ActionPerformed
+
+    private void jTextFieldValue2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldValue2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldValue2ActionPerformed
+
+    private void jTextFieldValue3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldValue3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldValue3ActionPerformed
+
+    private void jTextFieldValue4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldValue4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldValue4ActionPerformed
+
+    private void jTextFieldValue5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldValue5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldValue5ActionPerformed
+
+    private void jTextFieldValue6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldValue6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldValue6ActionPerformed
+
+    private void jTextFieldValue7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldValue7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldValue7ActionPerformed
+
+    private void jTextFieldValue8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldValue8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldValue8ActionPerformed
+
+    private void jTextFieldValue9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldValue9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldValue9ActionPerformed
+
+    private void jTextFieldValue10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldValue10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldValue10ActionPerformed
+       FocusListener f2 = new FocusListener () 
+    {
+        @Override
+        public void focusGained ( FocusEvent e ) {
+        //            throw new UnsupportedOperationException ( "Not supported yet." ); //To change body of generated methods, choose Tools | Templates.
+            JTextField jcb = ( JTextField ) e.getSource ();    
+            jcb.setText("");
+        }
+
+        @Override
+        public void focusLost ( FocusEvent e ) 
+        {
+           JTextField jcb = ( JTextField ) e.getSource ();    
+            String x = jcb.getText().trim ();
+            
+            if(x.equalsIgnoreCase ( ""))
+            {
+                x = "0.0";
+            }
+            
+            try{    
+                Float num  = Float.parseFloat( jcb.getText().toString()  );
+                    if( num<0  )
+                    {
+                     jcb.setText(x);
+                     }
+                 float data = Float.parseFloat(jcb.getText().toString()  );
+                 
+                 if(data >= lower  && data <= upper)
+                 {
+                     System.out.println(lower+"   "+upper);
+                 }
+                 else
+                 {
+                      JOptionPane.showMessageDialog ( null , "Entered value is out of range ." );
+                     
+                 }
+                 
+            }catch(Exception ex1)
+            {
+                System.out.println(ex1);
+                   jcb.setText(x);
+//                    StaticValues.writer.writeExcel (MaintenanceTypePanel.class.getSimpleName () , MaintenanceTypePanel.class.getSimpleName () , ex1.getClass ().toString () , Thread.currentThread ().getStackTrace ()[ 1 ].getLineNumber () + "" , ex1.getMessage () , StaticValues.sdf2.format ( Calendar.getInstance ().getTime () ) );            
+            }
+        }
+    };
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel JlabelId;
+    private javax.swing.JLabel jLabelName;
+    private javax.swing.JLabel jLabel_lower;
+    private javax.swing.JLabel jLabel_std;
+    private javax.swing.JLabel jLabel_upper;
+    private javax.swing.JTextField jTextFieldValue1;
+    private javax.swing.JTextField jTextFieldValue10;
+    private javax.swing.JTextField jTextFieldValue2;
+    private javax.swing.JTextField jTextFieldValue3;
+    private javax.swing.JTextField jTextFieldValue4;
+    private javax.swing.JTextField jTextFieldValue5;
+    private javax.swing.JTextField jTextFieldValue6;
+    private javax.swing.JTextField jTextFieldValue7;
+    private javax.swing.JTextField jTextFieldValue8;
+    private javax.swing.JTextField jTextFieldValue9;
+    // End of variables declaration//GEN-END:variables
+}
