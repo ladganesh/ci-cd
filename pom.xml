@@ -5,6 +5,12 @@
     <artifactId>ProdEzyDesktop</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
+    <repositories>
+    <repository>
+      <id>my-internal-site</id>
+      <url>https://trixware.s3.ap-south-1.amazonaws.com</url>
+    </repository>
+    </repositories>
     <dependencies>
         <dependency>
             <groupId>googlefirebase</groupId>
